@@ -1,3 +1,4 @@
+import 'package:account_entry/generated/l10n.dart';
 import 'package:account_entry/repository/raund_repository.dart';
 import 'package:account_entry/ui/styles/text_stales.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class RaundWidget extends StatelessWidget {
           onPressed: () {
             raundProvider.incrementRaund();
           },
-          child: Text('Завершить раунд'),
+          child: Text(S.of(context).finish_raund),
         ),
       ],
     );

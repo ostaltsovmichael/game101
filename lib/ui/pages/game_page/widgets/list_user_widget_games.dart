@@ -1,8 +1,6 @@
 import 'package:account_entry/model/user.dart';
 import 'package:account_entry/repository/user_repository.dart';
-
 import 'package:account_entry/ui/pages/game_page/widgets/game_card_widget.dart';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

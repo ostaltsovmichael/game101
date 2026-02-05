@@ -64,64 +64,84 @@ class S {
     );
   }
 
-  /// `Начать`
+  /// `Start`
   String get start {
-    return Intl.message('Начать', name: 'start', desc: '', args: []);
+    return Intl.message('Start', name: 'start', desc: '', args: []);
   }
 
-  /// `Игра в 101`
-  String get titleStartScreen {
-    return Intl.message(
-      'Игра в 101',
-      name: 'titleStartScreen',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Игра в 101`
+  /// `Game в 101`
   String get game101 {
-    return Intl.message('Игра в 101', name: 'game101', desc: '', args: []);
+    return Intl.message('Game в 101', name: 'game101', desc: '', args: []);
   }
 
-  /// `Для старта игры неоюходимо от одного до шести человек`
+  /// `For strt game need 2 and more players`
   String get startGameDescription {
     return Intl.message(
-      'Для старта игры неоюходимо от одного до шести человек',
+      'For strt game need 2 and more players',
       name: 'startGameDescription',
       desc: '',
       args: [],
     );
   }
 
-  /// `Начать игру`
+  /// `Start games`
   String get startGame {
-    return Intl.message('Начать игру', name: 'startGame', desc: '', args: []);
+    return Intl.message('Start games', name: 'startGame', desc: '', args: []);
   }
 
-  /// `${gamerCount} / 6 игроков`
-  String gamercount6(Object gamerCount) {
+  /// `Close`
+  String get close {
+    return Intl.message('Close', name: 'close', desc: '', args: []);
+  }
+
+  /// `Score: `
+  String get score {
+    return Intl.message('Score: ', name: 'score', desc: '', args: []);
+  }
+
+  /// `Change`
+  String get change {
+    return Intl.message('Change', name: 'change', desc: '', args: []);
+  }
+
+  /// `Внимание`
+  String get attention {
+    return Intl.message('Внимание', name: 'attention', desc: '', args: []);
+  }
+
+  /// `Проигрыш`
+  String get loss {
+    return Intl.message('Проигрыш', name: 'loss', desc: '', args: []);
+  }
+
+  /// `Завершить игру`
+  String get finish_game {
     return Intl.message(
-      '\$$gamerCount / 6 игроков',
-      name: 'gamercount6',
+      'Завершить игру',
+      name: 'finish_game',
       desc: '',
-      args: [gamerCount],
+      args: [],
     );
   }
 
-  /// `Закрыть`
-  String get close {
-    return Intl.message('Закрыть', name: 'close', desc: '', args: []);
+  /// `Завершить раунд`
+  String get finish_raund {
+    return Intl.message(
+      'Завершить раунд',
+      name: 'finish_raund',
+      desc: '',
+      args: [],
+    );
   }
 
-  /// `Счет: `
-  String get score {
-    return Intl.message('Счет: ', name: 'score', desc: '', args: []);
+  /// `Имя...`
+  String get name_points {
+    return Intl.message('Имя...', name: 'name_points', desc: '', args: []);
   }
 
-  /// `Изменить`
-  String get change {
-    return Intl.message('Изменить', name: 'change', desc: '', args: []);
+  /// `Добавить`
+  String get add {
+    return Intl.message('Добавить', name: 'add', desc: '', args: []);
   }
 }
 

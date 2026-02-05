@@ -20,21 +20,23 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
-  static String m0(gamerCount) => "\$${gamerCount} / 6 игроков";
-
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-    "change": MessageLookupByLibrary.simpleMessage("Изменить"),
-    "close": MessageLookupByLibrary.simpleMessage("Закрыть"),
-    "game101": MessageLookupByLibrary.simpleMessage("Игра в 101"),
-    "gamercount6": m0,
-    "score": MessageLookupByLibrary.simpleMessage("Счет: "),
-    "start": MessageLookupByLibrary.simpleMessage("Начать"),
-    "startGame": MessageLookupByLibrary.simpleMessage("Начать игру"),
+    "add": MessageLookupByLibrary.simpleMessage("Добавить"),
+    "attention": MessageLookupByLibrary.simpleMessage("Внимание"),
+    "change": MessageLookupByLibrary.simpleMessage("Change"),
+    "close": MessageLookupByLibrary.simpleMessage("Close"),
+    "finish_game": MessageLookupByLibrary.simpleMessage("Завершить игру"),
+    "finish_raund": MessageLookupByLibrary.simpleMessage("Завершить раунд"),
+    "game101": MessageLookupByLibrary.simpleMessage("Game в 101"),
+    "loss": MessageLookupByLibrary.simpleMessage("Проигрыш"),
+    "name_points": MessageLookupByLibrary.simpleMessage("Имя..."),
+    "score": MessageLookupByLibrary.simpleMessage("Score: "),
+    "start": MessageLookupByLibrary.simpleMessage("Start"),
+    "startGame": MessageLookupByLibrary.simpleMessage("Start games"),
     "startGameDescription": MessageLookupByLibrary.simpleMessage(
-      "Для старта игры неоюходимо от одного до шести человек",
+      "For strt game need 2 and more players",
     ),
     "startScreen": MessageLookupByLibrary.simpleMessage("Start Screen"),
-    "titleStartScreen": MessageLookupByLibrary.simpleMessage("Игра в 101"),
   };
 }

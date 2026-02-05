@@ -1,12 +1,16 @@
 {
   "startScreen": "Начальный экран",
   "start": "Начать",
-  "titleStartScreen": "Игра в 101",
   "game101": "Игра в 101",
-  "startGameDescription": "Для старта игры неоюходимо от одного до шести человек",
+  "startGameDescription": "Для старта игры неоюходимо от одного до шести игроков",
   "startGame": "Начать игру",
-  "gamercount6": "${gamerCount} / 6 игроков",
   "close": "Закрыть",
   "score": "Счет: ",
-  "change": "Изменить"
+  "change": "Изменить",
+  "attention": "Внимание",
+  "loss": "Проигрыш",
+  "finish_game": "Завершить игру",
+  "finish_raund": "Завершить раунд",
+  "name_points": "Имя...",
+  "add": "Добавить"
 }

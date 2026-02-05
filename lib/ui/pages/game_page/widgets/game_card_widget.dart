@@ -1,3 +1,4 @@
+import 'package:account_entry/generated/l10n.dart';
 import 'package:account_entry/repository/router_repository.dart';
 import 'package:account_entry/repository/user_repository.dart';
 import 'package:account_entry/ui/colors/colors_app.dart';
@@ -63,12 +64,12 @@ class GameCardWidget extends StatelessWidget {
                   showDialog(
                     context: context,
                     builder: (context) => AlertDialog(
-                      title: Text('Внимание'),
+                      title: Text(S.of(context).attention),
                       content: TextField(
                         controller: _pointController,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
-                          hint: Text('Изменить'),
+                          hint: Text(S.of(context).change),
                         ),
                       ),
                       actions: [
@@ -81,13 +82,15 @@ class GameCardWidget extends StatelessWidget {
                             userProvider.updatePointById(_id, result);
                             routerProvider.navigateBack(context);
                           },
-                          child: Text('Изменить'),
+                          child: Text(S.of(context).change),
                         ),
                       ],
                     ),
                   );
                 },
-                child: _point > 101 ? Text('Проиграл') : Text('Очков $_point'),
+                child: _point > 101
+                    ? Text(S.of(context).loss)
+                    : Text('Очков: $_point'),
               ),
             ),
           ],

@@ -1,12 +1,9 @@
 import 'package:account_entry/generated/l10n.dart';
 import 'package:account_entry/repository/router_repository.dart';
-
 import 'package:account_entry/ui/pages/welcome_page/widgets/logo.dart';
-
 import 'package:account_entry/ui/styles/text_stales.dart';
 import 'package:account_entry/ui/widgets/appButton.dart';
 import 'package:account_entry/ui/pages/welcome_page/widgets/description_text_welcome_screen.dart';
-
 import 'package:account_entry/ui/widgets/staticTextApp.dart';
 import 'package:flutter/material.dart';
 

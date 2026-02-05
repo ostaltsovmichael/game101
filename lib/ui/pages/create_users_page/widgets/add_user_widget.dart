@@ -1,6 +1,6 @@
+import 'package:account_entry/generated/l10n.dart';
 import 'package:account_entry/repository/user_repository.dart';
 import 'package:account_entry/ui/styles/text_stales.dart';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -24,7 +24,7 @@ class _AddUserWidgetState extends State<AddUserWidget> {
             controller: _nameController,
             decoration: InputDecoration(
               border: OutlineInputBorder(),
-              hint: Text('Имя...'),
+              hint: Text(S.of(context).name_points),
             ),
           ),
         ),
@@ -35,7 +35,7 @@ class _AddUserWidgetState extends State<AddUserWidget> {
             userProvider.createUser(_nameController.text);
             _nameController.text = '';
           },
-          child: Text('Добавить', style: _textStyles.buttonTextStyle),
+          child: Text(S.of(context).add, style: _textStyles.buttonTextStyle),
         ),
       ],
     );

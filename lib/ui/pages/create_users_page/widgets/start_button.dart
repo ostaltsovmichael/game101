@@ -1,3 +1,4 @@
+import 'package:account_entry/generated/l10n.dart';
 import 'package:account_entry/repository/router_repository.dart';
 import 'package:account_entry/repository/user_repository.dart';
 import 'package:account_entry/ui/styles/text_stales.dart';
@@ -22,7 +23,10 @@ class StartButton extends StatelessWidget {
               onPressed: () {
                 routerProvider.navigateToGamePage(context);
               },
-              child: Text('Начать', style: _textStyles.countTextStyle),
+              child: Text(
+                S.of(context).start,
+                style: _textStyles.countTextStyle,
+              ),
             ),
           );
         } else {
