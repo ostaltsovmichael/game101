@@ -1,0 +1,12 @@
+{
+  "startScreen": "Начальный экран",
+  "start": "Начать",
+  "titleStartScreen": "Игра в 101",
+  "game101": "Игра в 101",
+  "startGameDescription": "Для старта игры неоюходимо от одного до шести человек",
+  "startGame": "Начать игру",
+  "gamercount6": "${gamerCount} / 6 игроков",
+  "close": "Закрыть",
+  "score": "Счет: ",
+  "change": "Изменить"
+}
