@@ -13,7 +13,7 @@ class Logo extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [colorsApp.cardLeftColor, colorsApp.cardRigtColor],
+          colors: [colorsApp.logoGradientLeft, colorsApp.logoGradientRight],
         ),
         borderRadius: BorderRadius.circular(10),
       ),

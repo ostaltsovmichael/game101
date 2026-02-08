@@ -44,6 +44,14 @@ class UserRepository extends ChangeNotifier {
     notifyListeners();
   }
 
+  void allPointsZero() async {
+    final data = await _userService.getAllUsers();
+    for (int i = data[0].id; i <= data.length; i++) {
+      _userService.updatePointById(i, 0);
+      notifyListeners();
+    }
+  }
+
   int lengId() {
     int id = _userService.lengId();
     return id;
@@ -55,8 +63,9 @@ class UserRepository extends ChangeNotifier {
   }
 
   void daleteAll() {
+    print('object');
     _userService.daleteAll();
-    notifyListeners();
+    // notifyListeners();
   }
 
   void closeDb() {

@@ -1,12 +1,12 @@
 import 'package:account_entry/generated/l10n.dart';
 import 'package:account_entry/repository/router_repository.dart';
 import 'package:account_entry/repository/user_repository.dart';
-import 'package:account_entry/ui/styles/text_stales.dart';
+import 'package:account_entry/ui/widgets/staticTextApp.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class StartButton extends StatelessWidget {
-  final AppTextStyle _textStyles = AppTextStyle();
+  StartButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,10 +23,7 @@ class StartButton extends StatelessWidget {
               onPressed: () {
                 routerProvider.navigateToGamePage(context);
               },
-              child: Text(
-                S.of(context).start,
-                style: _textStyles.countTextStyle,
-              ),
+              child: StaticTextApp(text: S.of(context).start),
             ),
           );
         } else {

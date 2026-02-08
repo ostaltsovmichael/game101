@@ -16,7 +16,9 @@ class WelcomePage extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [_colorsApp.fonAppLeftColor, _colorsApp.fonAppRigtColor],
+            colors: [
+              _colorsApp.appBackgroundGradientLeft,
+              _colorsApp.appBackgroundGradientRight],
           ),
         ),
 

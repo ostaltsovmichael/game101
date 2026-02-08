@@ -18,7 +18,10 @@ class CreateUsersPage extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [_colorsApp.fonAppLeftColor, _colorsApp.fonAppRigtColor],
+            colors: [
+              _colorsApp.appBackgroundGradientLeft,
+              _colorsApp.appBackgroundGradientRight,
+            ],
           ),
         ),
         child: Padding(
@@ -29,7 +32,6 @@ class CreateUsersPage extends StatelessWidget {
               SizedBox(height: 150),
               AddUserWidget(),
               SizedBox(height: 24),
-              //ListUsersWidget(),
               Expanded(child: ListUsersWidget()),
               SizedBox(height: 24),
               StartButton(),

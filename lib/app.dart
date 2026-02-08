@@ -15,7 +15,11 @@ class _AppState extends State<App> {
   @override
   void initState() {
     super.initState();
-    AppLifecycleListener(onDetach: () => UserRepository().closeDb());
+    AppLifecycleListener(
+      onDetach: () {
+        UserRepository().closeDb();
+      },
+    );
   }
 
   @override

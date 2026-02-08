@@ -3,11 +3,11 @@ import 'package:account_entry/ui/colors/colors_app.dart';
 import 'package:flutter/material.dart';
 
 class StaticTextApp extends StatelessWidget {
-  StaticTextApp({super.key, required String name}) : _name = name;
+  StaticTextApp({super.key, required String text}) : _text = text;
 
   final textStyle = AppTextStyle();
   final _colorsApp = ColorsApp();
-  final String _name;
+  final String _text;
 
   @override
   Widget build(BuildContext context) {
@@ -16,13 +16,13 @@ class StaticTextApp extends StatelessWidget {
           .srcIn, // Позволяет градиенту отображаться только поверх текста
       shaderCallback: (bounds) => LinearGradient(
         colors: [
-          _colorsApp.titleWelcomLeftColor,
-          _colorsApp.titleWelcomRigtColor,
+          _colorsApp.appFonLeftColor,
+          _colorsApp.appFonRightColor,
 
           //  Colors.purple
         ],
       ).createShader(Rect.fromLTWH(0, 0, bounds.width, bounds.height)),
-      child: Text(_name, style: textStyle.titleTextStartScreen),
+      child: Text(_text, style: textStyle.titleTextStartScreen),
     );
   }
 }

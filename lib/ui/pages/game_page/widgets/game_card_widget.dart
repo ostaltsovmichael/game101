@@ -32,7 +32,10 @@ class GameCardWidget extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [colorsApp.fonAppRigtColor, colorsApp.fonAppLeftColor],
+          colors: [
+            colorsApp.appBackgroundGradientRight,
+            colorsApp.appBackgroundGradientLeft,
+          ],
         ),
       ),
 
@@ -48,16 +51,16 @@ class GameCardWidget extends StatelessWidget {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                    colorsApp.fonAppRigtColor,
-                    colorsApp.fonAppLeftColor,
+                    colorsApp.appBackgroundGradientRight,
+                    colorsApp.appBackgroundGradientLeft,
                   ],
                 ),
               ),
 
-              child: StaticTextApp(name: _name[0]),
+              child: StaticTextApp(text: _name[0]),
             ),
             SizedBox(width: 12),
-            Expanded(child: StaticTextApp(name: _name)),
+            Expanded(child: StaticTextApp(text: _name)),
             Expanded(
               child: TextButton(
                 onPressed: () {

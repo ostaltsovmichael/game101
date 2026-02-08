@@ -60,8 +60,9 @@ class UserService {
     await db.delete(_userTableName);
   }
 
-  void closeDb() async {
+  Future<void> closeDb() async {
     final db = await dbHelper.db;
-    db.close();
+    await db.close();
+    print('✅ База данных закрыта');
   }
 }
