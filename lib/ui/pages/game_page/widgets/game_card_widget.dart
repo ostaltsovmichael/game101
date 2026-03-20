@@ -69,6 +69,7 @@ class GameCardWidget extends StatelessWidget {
                     builder: (context) => AlertDialog(
                       title: Text(S.of(context).attention),
                       content: TextField(
+                        keyboardType: TextInputType.number,
                         controller: _pointController,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),

@@ -4,9 +4,14 @@ import 'package:account_entry/ui/pages/create_users_page/widgets/list_users_widg
 import 'package:account_entry/ui/pages/create_users_page/widgets/start_button.dart';
 import 'package:flutter/material.dart';
 
-class CreateUsersPage extends StatelessWidget {
+class CreateUsersPage extends StatefulWidget {
   CreateUsersPage({super.key});
 
+  @override
+  State<CreateUsersPage> createState() => _CreateUsersPageState();
+}
+
+class _CreateUsersPageState extends State<CreateUsersPage> {
   final _colorsApp = ColorsApp();
 
   @override

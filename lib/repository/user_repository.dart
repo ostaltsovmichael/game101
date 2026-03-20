@@ -10,9 +10,11 @@ class UserRepository extends ChangeNotifier {
   void createUser(String name) async {
     try {
       final allUsers = await _userService.getAllUsers();
+      
+      
 
-      final lengUsers = allUsers.length;
-
+  int lengUsers = allUsers.length;
+    
       if (lengUsers < 6) {
         _userService.createUser(name);
       } else {
@@ -25,9 +27,12 @@ class UserRepository extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<List<User>> getAllUser() async {
-    final data = await _userService.getAllUsers();
-    // notifyListeners();
+Future<List<User> >getAllUser() async {
+    final data =  await _userService.getAllUsers();
+
+    //data.sort((a,b)=>a.point.compareTo(a.point));
+    print(data);
+    //notifyListeners();
     return data;
   }
 
@@ -52,8 +57,8 @@ class UserRepository extends ChangeNotifier {
     }
   }
 
-  int lengId() {
-    int id = _userService.lengId();
+  Future<int> lengId() async {
+    int id = await _userService.lengId();
     return id;
   }
 
@@ -64,7 +69,7 @@ class UserRepository extends ChangeNotifier {
 
   void daleteAll() {
     print('object');
-    _userService.daleteAll();
+    _userService.deleteAll();
     // notifyListeners();
   }
 

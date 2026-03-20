@@ -1,8 +1,8 @@
 import 'package:account_entry/generated/l10n.dart';
-import 'package:account_entry/model/user.dart';
 import 'package:account_entry/repository/user_repository.dart';
 import 'package:account_entry/ui/styles/text_stales.dart';
 import 'package:account_entry/ui/widgets/staticTextApp.dart';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

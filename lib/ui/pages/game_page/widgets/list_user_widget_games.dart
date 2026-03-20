@@ -15,9 +15,12 @@ class ListUserWidgetGames extends StatelessWidget {
       future: userProvider.getAllUser(),
       builder: (context, snapshot) {
         return ListView.builder(
-          itemCount: snapshot.data!.length,
+         // snapshot.data.sort((a,b)=> a.point.compareTo(b.point));
+          itemCount: snapshot.data?.length ?? 0,
           itemBuilder: (context, index) {
             User user = snapshot.data![index];
+            //snapshot.data!.sort((a,b)=> a.point.compareTo(b.point));
+
             return Padding(
               padding: const EdgeInsets.all(8.0),
               child: GameCardWidget(

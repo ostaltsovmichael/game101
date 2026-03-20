@@ -18,7 +18,8 @@ class WelcomePage extends StatelessWidget {
             end: Alignment.bottomRight,
             colors: [
               _colorsApp.appBackgroundGradientLeft,
-              _colorsApp.appBackgroundGradientRight],
+              _colorsApp.appBackgroundGradientRight,
+            ],
           ),
         ),
 

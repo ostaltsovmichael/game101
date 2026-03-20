@@ -30,6 +30,12 @@ class UserService {
           ),
         )
         .toList();
+   // users.sort((a,b)=>a.point.compareTo(a.point));
+
+    for (var i in users){
+    //  users.sort((a,b)=>a.point.compareTo(a.point));
+      print(i.name);
+    }
     return users;
   }
 
@@ -43,7 +49,7 @@ class UserService {
     );
   }
 
-  dynamic lengId() async {
+  Future<int> lengId() async {
     final db = await dbHelper.db;
     final data = await db.query(_userTableName);
     int id = data.length;
@@ -55,7 +61,7 @@ class UserService {
     await db.delete(_userTableName, where: 'id = ?', whereArgs: [id]);
   }
 
-  void daleteAll() async {
+  void deleteAll() async {
     final db = await dbHelper.db;
     await db.delete(_userTableName);
   }
@@ -63,6 +69,5 @@ class UserService {
   Future<void> closeDb() async {
     final db = await dbHelper.db;
     await db.close();
-    print('✅ База данных закрыта');
   }
 }
